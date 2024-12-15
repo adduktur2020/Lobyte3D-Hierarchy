@@ -1,0 +1,46 @@
+topogTestsFlat		# model name
+modelOutput/		# output folder
+
+1000			# Total iterations e.g. 2319 for Frigg Fan model
+0.001 			# Timestep in My, the interval between turbidity current events
+500 			# Grid x dimension (km)
+500 			# Grid y dimension (km)
+1.0 			# Grid cell x size in km
+1.0			# Grid cell y size in km
+modelInputParameters/initialTopographyFiles/initTopogConcaveFlatFloor.txt	# Initial topography filename
+
+250			# Flow entry point x-coordinate
+3			# Flow entry point y-coordinate
+93800000		# Maximum sediment volume in each flow during model run, m3
+93800000		# Minimum sediment volume in each flow during model run, m3 
+25			# Sediment supply oscillation period, number of iterations
+0.02			# hemipelagic deposition rate, per time step, m per My
+0.0			# Diffusion cooefficient, m2 per My KEEP AT ZERO
+
+9.81			# Acceleration due to gravity m squared per second 
+1.00			# Density (kg/m^3) of the ambient fluid
+1.3E-10;		# Erosion rate constant, value from original equation 1.3E-7
+0.004 			# Basal friction coefficient
+0.00025			# d50 (m) median grain diameter (medium/fine sand)
+2660.00			# Grain density in kg/m3 SILICICLASTIC quartz/feldspar here
+0.1			# Depositional velocity threshold (m/s) to commence dispersive flow and deposition 
+0.5			# Flow acceleration/deceleration coefficient - 1.0 is instant acceleration or deceleratio to new v per flow time step, 0.5 halfway accel/decel etc
+100			# Total flow thickness, fluid and sediment mix, in meters
+0.10			# Flow COG proportion - what proportion of flow thickness to use to calculate flow center of gravity for velocity and gradient calculations
+0.01			# Volumetric sediment concentration Cv of a suspension Cv = VolSed./VolTot possible values 0.4, 0.07, 0.25
+0.001 			# Minimum flow thickness (m) - end flow when volume remaining would not exceed this thickness of deposition in any cell
+1.00			# Proportion of the height of ponding topographic lows to fill when flow is trapped
+2.0			# FlowRadiationFactor - 10 will concentrate the flow in the direction of max velocity/slope gradient
+13			# Number of fractions in the depositional fraction profile
+0.001,0.002,0.004,0.008,0.016,0.032,0.040,0.044,0.046,0.047,0.048,0.049,0.050 # Proportion of flow volume to deposit e.g. 0.01, 0.025, 0.05
+
+
+1			# Animation flag 1 to record an animation during the model run, 0 to not
+150			# Start chron for the animation
+250			# End chron for the animation
+205,330,50,225		# x and y limits for the animation map view
+
+
+
+
+
